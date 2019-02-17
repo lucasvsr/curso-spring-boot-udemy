@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-DemoMvcApplication<demo-mvc>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "mainClass": "com.lucasribeiro.curso.boot.DemoMvcApplication",
+            "projectName": "demo-mvc",
+            "args": ""
+        }
+    ]
+}

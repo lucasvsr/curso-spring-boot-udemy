@@ -7,4 +7,5 @@ import com.lucasribeiro.curso.boot.domain.Cargo;
 @Repository
 public class CargoDaoImpl extends AbstractDAO<Cargo, Long> implements CargoDAO{
 
+
 }
