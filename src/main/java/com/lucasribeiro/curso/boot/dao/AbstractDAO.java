@@ -17,8 +17,8 @@ public abstract class AbstractDAO<T, PK extends Serializable> {
 	@PersistenceContext
 	private EntityManager entityManager;
 	
-	@SuppressWarnings("unused")
-	private EntityManager getEntityManager() {
+	
+	protected EntityManager getEntityManager() {
 		return entityManager;
 	}
 	
@@ -50,7 +50,7 @@ public abstract class AbstractDAO<T, PK extends Serializable> {
 		TypedQuery<T> query = entityManager.createQuery(jpql, entityClass);
 		
 		for(int i = 0; i < params.length; i++) {
-			query.setParameter(i, params[i]);
+			query.setParameter(i+1, params[i]);
 		}
 		
 		return query.getResultList();
